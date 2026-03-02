@@ -38,7 +38,7 @@ h2{font-family:var(--serif);font-size:clamp(28px,6vw,42px);font-weight:700;line-
 h2 i{color:var(--gold)}
 .center{text-align:center}
 
-/* HERO - WITH HEADSHOT (NO GOLD BORDER) */
+/* HERO */
 #hero{min-height:100svh;display:grid;align-content:center;padding:72px 20px 20px 20px;gap:20px}
 .hero-left{display:flex;flex-direction:column;justify-content:center}
 .hero-tag{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:8px}
@@ -64,7 +64,7 @@ h2 i{color:var(--gold)}
 /* ABOUT */
 .about-text p{font-size:15px;color:var(--mid);line-height:1.8;margin-bottom:14px}
 
-/* SKILLS - GRID OF CARDS WITH EMOJI ICONS */
+/* SKILLS */
 .skills-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:16px;margin-top:20px}
 .skill-card{background:var(--white);border:1px solid var(--border);padding:20px 16px;text-align:center;transition:all 0.2s}
 .skill-card:hover{border-color:var(--gold);box-shadow:0 4px 12px rgba(0,0,0,0.02)}
@@ -74,7 +74,7 @@ h2 i{color:var(--gold)}
 @media(max-width:720px){.skills-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:480px){.skills-grid{grid-template-columns:1fr}}
 
-/* EXPERIENCE - TIMELINE VERSION */
+/* EXPERIENCE */
 .timeline{position:relative;display:flex;flex-direction:column;gap:0px}
 .timeline-item{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--border);position:relative}
 .timeline-item:last-child{border-bottom:none}
@@ -84,7 +84,7 @@ h2 i{color:var(--gold)}
 .timeline-content .exp-desc{font-size:13px;color:var(--mid);line-height:1.6;margin-bottom:8px}
 @media(max-width:600px){.timeline-item{grid-template-columns:1fr;gap:6px}.timeline-date{font-weight:600}}
 
-/* CERTIFICATIONS WITH EMOJI ICONS */
+/* CERTIFICATIONS */
 .certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:16px}
 .cert{background:var(--white);border:1px solid var(--border);overflow:hidden}
 .cert-bar{height:3px;background:var(--gold)}
@@ -177,12 +177,13 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
   <a href="#contact" onclick="closeMenu()">Contact</a>
 </div>
 
-<!-- HERO WITH HEADSHOT (NO GOLD BORDER) -->
+<!-- HERO -->
 <section id="hero">
   <div class="hero-left fade">
     <h1 class="hero-name">Ý<br>Nguyễn</h1>
     <p class="hero-creds">CPA, CA · CIA · CSSCP</p>
-    <p class="hero-desc">Chartered Accountant and Certified Internal Auditor with deep progressive experience building risk and audit functions at the intersection of technology, emerging risks, and sustainability. I partner with executives as a strategic thinker and hands-on enabler—designing programs from inception, reporting directly to Boards and Audit Committees, and translating complexity into action. I help organizations scan the horizon for known and unknown risks, strengthen governance across jurisdictions, and scale with guardrails.</p>
+    <p class="hero-desc">Chartered Accountant and Certified Internal Auditor with deep progressive experience building risk and audit functions at the intersection of technology, emerging risks, and sustainability.</p>
+    <p class="hero-desc">I partner with executives as a strategic thinker and hands-on enabler—designing programs from inception, reporting directly to Boards and Audit Committees, and translating complexity into action. I help organizations scan the horizon for known and unknown risks, strengthen governance across jurisdictions, and scale with guardrails.</p>
     <div class="btns">
       <a href="#contact" class="btn btn-g">Get In Touch</a>
       <a href="https://www.linkedin.com/in/ynguyenca" target="_blank" class="btn btn-o">LinkedIn</a>
@@ -193,13 +194,13 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
   </div>
 </section>
 
-<!-- STATS SECTION -->
+<!-- STATS -->
 <div class="wrap" style="margin-top:0; margin-bottom:30px;">
   <div class="stats fade" style="transition-delay:.18s; padding:0 20px;">
-    <div class="stat"><div class="stat-n">25+ Years</div><div class="stat-l">Building & bettering</div></div>
+    <div class="stat"><div class="stat-n">25+ Years</div><div class="stat-l">Building & Bettering</div></div>
     <div class="stat"><div class="stat-n">De Novo Expert</div><div class="stat-l">Functions from scratch</div></div>
     <div class="stat"><div class="stat-n">Force Multiplier</div><div class="stat-l">Strategic enabler</div></div>
-    <div class="stat"><div class="stat-n">Advisory & Management Consulting</div><div class="stat-l">BDO · NorthFind · EY</div></div>
+    <div class="stat"><div class="stat-n">Microsoft Finalist</div><div class="stat-l">2024 Sustainability Changemaker</div></div>
   </div>
 </div>
 
@@ -210,15 +211,13 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
     <h2 class="fade">Building Functions.<br><i>Enabling Leaders.</i></h2>
     <div class="about-text">
       <p class="fade">I am a Chartered Accountant and Certified Internal Auditor who builds and betters risk, audit, and strategic functions at the intersection of technology, emerging risks, and sustainability. I have built new practices from the ground up, bettered existing ones under regulatory scrutiny, and served as a trusted strategic partner to executives, Boards, and Audit Committees.</p>
-      
       <p class="fade">My work sits at the crossroads of strategy and execution. I design first-time programs, establish scalable infrastructure, and roll up my sleeves to get things done. I report directly to leadership, challenge constructively, and translate complex risks into clear, actionable insights. I am both a strategic thinker and a hands-on enabler—a force multiplier for executives and Boards navigating complexity.</p>
-      
       <p class="fade">I help organizations of all sizes and maturities scan the horizon for known and unknown risks, strengthen governance across jurisdictions, and scale with guardrails while keeping pace with innovation. I apply deep technical rigor with business practicality to help leaders move faster, smarter, and safer.</p>
     </div>
   </div>
 </section>
 
-<!-- SKILLS - GRID OF CARDS WITH EMOJI ICONS -->
+<!-- SKILLS -->
 <section id="skills" class="sec">
   <div class="wrap">
     <p class="eyebrow center fade">Competencies</p>
@@ -226,10 +225,10 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
     <div class="skills-grid fade">
       <div class="skill-card"><div class="skill-icon">📋</div><div class="skill-card-title">Internal Audit Program Design</div><div class="skill-card-desc">Risk-based audit planning and program development from inception</div></div>
       <div class="skill-card"><div class="skill-icon">📊</div><div class="skill-card-title">Audit Committee Reporting</div><div class="skill-card-desc">Executive and Board-level reporting on risk and controls</div></div>
-      <div class="skill-card"><div class="skill-icon">🏛️</div><div class="skill-card-title">Regulatory Expertise</div><div class="skill-card-desc">Deep understanding of regulatory expectations for financial institutions</div></div>
+      <div class="skill-card"><div class="skill-icon">🏛️</div><div class="skill-card-title">Regulatory Expertise</div><div class="skill-card-desc">Deep understanding of regulatory expectations</div></div>
       <div class="skill-card"><div class="skill-icon">💰</div><div class="skill-card-title">Lending Operations</div><div class="skill-card-desc">Full credit lifecycle: origination, servicing, collections</div></div>
-      <div class="skill-card"><div class="skill-icon">🤝</div><div class="skill-card-title">Third-Party Risk Management</div><div class="skill-card-desc">Managing third-party and fourth-party risks for supply chain risk mitigation</div></div>
-      <div class="skill-card"><div class="skill-icon">🔍</div><div class="skill-card-title">External Audit Oversight</div><div class="skill-card-desc">Managing relationships with external auditors for co-sourced or outsourced audit management</div></div>
+      <div class="skill-card"><div class="skill-icon">🤝</div><div class="skill-card-title">Third-Party Risk Management</div><div class="skill-card-desc">Third/fourth-party risk mitigation and supply chain optimization</div></div>
+      <div class="skill-card"><div class="skill-icon">🔍</div><div class="skill-card-title">External Audit Oversight</div><div class="skill-card-desc">Co-sourced and outsourced audit management</div></div>
       <div class="skill-card"><div class="skill-icon">💻</div><div class="skill-card-title">IT & Operational Controls</div><div class="skill-card-desc">Technology and operational control frameworks</div></div>
       <div class="skill-card"><div class="skill-icon">🏃</div><div class="skill-card-title">Pre-IPO Readiness</div><div class="skill-card-desc">Control design and remediation for public offerings</div></div>
       <div class="skill-card"><div class="skill-icon">🎯</div><div class="skill-card-title">Enterprise Risk Management</div><div class="skill-card-desc">ERM framework development and implementation</div></div>
@@ -240,7 +239,7 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
   </div>
 </section>
 
-<!-- EXPERIENCE - TIMELINE (CORRECT CHRONOLOGY) -->
+<!-- EXPERIENCE -->
 <section id="experience" class="sec gray">
   <div class="wrap">
     <p class="eyebrow center fade">Experience</p>
@@ -267,7 +266,7 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
         <div class="timeline-content">
           <div class="exp-title">Practice Lead, Risk Management & BCM</div>
           <div class="exp-co">NorthFind Management Consulting</div>
-          <div class="exp-desc">Built and led a new risk management practice from the ground up, defining and executing its strategy, service offerings, and methodology. Advised Canadian and US clients on operational resilience, third-party risk, and regulatory preparedness across multiple regions.</div>
+          <div class="exp-desc">Built and led a new risk management practice from the ground up. Advised Canadian and US clients on operational resilience, third-party risk, and regulatory preparedness across multiple regions.</div>
         </div>
       </div>
       <div class="timeline-item fade">
@@ -275,7 +274,7 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
         <div class="timeline-content">
           <div class="exp-title">Senior Manager, Internal Audit</div>
           <div class="exp-co">Home Trust Company · Toronto</div>
-          <div class="exp-desc">Senior leadership within the internal audit function for a federally regulated special lending bank, ensuring adherence to OSFI guidelines (including B-10, B-20), Privacy (PIPEDA/GDPR), AML (FINTRAC), and Trust and Loan Companies Act requirements. Regulatory environment directly analogous to U.S. federal and state expectations for lending institutions.</div>
+          <div class="exp-desc">Senior leadership within the internal audit function for a federally regulated special lending bank, ensuring adherence to OSFI guidelines, Privacy (PIPEDA/GDPR), AML (FINTRAC), and Trust and Loan Companies Act requirements.</div>
         </div>
       </div>
       <div class="timeline-item fade">
@@ -283,7 +282,7 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
         <div class="timeline-content">
           <div class="exp-title">Internal Controls Consultant</div>
           <div class="exp-co">HomEquity Bank · Toronto</div>
-          <div class="exp-desc">Internal controls and operational risk expert for a public Canadian lender specializing in reverse mortgages that scaled rapidly from private lender to IPO. Served as a strategic partner to Finance, Legal, and Compliance leadership.</div>
+          <div class="exp-desc">Internal controls and operational risk expert for a public Canadian lender that scaled rapidly from private lender to IPO. Served as strategic partner to Finance, Legal, and Compliance leadership.</div>
         </div>
       </div>
       <div class="timeline-item fade">
@@ -297,9 +296,9 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
       <div class="timeline-item fade">
         <div class="timeline-date">2013 – 2014</div>
         <div class="timeline-content">
-          <div class="exp-title">Internal Audit QAIP (Quality Assurance and Improvement Process)</div>
+          <div class="exp-title">Director, Internal Audit QAIP</div>
           <div class="exp-co">CIBC · Toronto</div>
-          <div class="exp-desc">Led the audit quality assurance function governing CIBC's global internal audit departments, ensuring adherence to COSO, IIA International Standards and federal regulatory expectations. Evaluated the internal audit's capabilities to review the Bank's adequacy and effectiveness of internal controls, risk management, and governance processes.</div>
+          <div class="exp-desc">Led the audit quality assurance function governing CIBC's global internal audit departments, ensuring adherence to COSO, IIA International Standards and federal regulatory expectations.</div>
         </div>
       </div>
       <div class="timeline-item fade">
@@ -307,7 +306,7 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
         <div class="timeline-content">
           <div class="exp-title">Assistant Internal Audit Manager</div>
           <div class="exp-co">CITCO Fund Services · Toronto & Caribbean</div>
-          <div class="exp-desc">Conducted operational audits for a global hedge fund administrator across multiple international jurisdictions.</div>
+          <div class="exp-desc">Conducted operational audits for a global hedge fund administrator across multiple international jurisdictions. Collaborated with IT audit to design and execute integrated audits of proprietary financial systems.</div>
         </div>
       </div>
       <div class="timeline-item fade">
@@ -315,14 +314,14 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
         <div class="timeline-content">
           <div class="exp-title">Manager, Assurance & Advisory</div>
           <div class="exp-co">Ernst & Young LLP · Toronto</div>
-          <div class="exp-desc">Built foundational career in external audit and internal control reviews within a Big 4 firm, specializing in regulated financial services. Served key clients including State Street, UBS, and American Express. Progressed from Co-op Student to Senior Staff Accountant to Manager.</div>
+          <div class="exp-desc">Built foundational career in external audit and internal control reviews within a Big 4 firm, specializing in regulated financial services. Progressed from Co-op Student to Senior Staff Accountant to Manager.</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CERTIFICATIONS WITH EMOJI ICONS -->
+<!-- CERTIFICATIONS -->
 <section id="certifications" class="sec">
   <div class="wrap">
     <p class="eyebrow center fade">Credentials</p>
@@ -335,7 +334,7 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
           <div class="cert-abbr">CPA, CA</div>
           <div class="cert-full">Chartered Professional Accountant</div>
           <div class="cert-issuer">CPA Ontario · Active</div>
-          <div class="cert-desc">Chartered Professional Accountant designation representing the highest standard of competence in the accounting profession in Canada.</div>
+          <div class="cert-desc">Highest standard of competence in the Canadian accounting profession.</div>
         </div>
       </div>
       <div class="cert fade" style="transition-delay:.07s">
@@ -345,7 +344,7 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
           <div class="cert-abbr">CIA</div>
           <div class="cert-full">Certified Internal Auditor</div>
           <div class="cert-issuer">Institute of Internal Auditors · Active</div>
-          <div class="cert-desc">Globally recognized certification for internal auditors, demonstrating expertise in risk management, control, and governance processes.</div>
+          <div class="cert-desc">Global certification in risk management, control, and governance.</div>
         </div>
       </div>
       <div class="cert fade" style="transition-delay:.14s">
@@ -355,7 +354,7 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
           <div class="cert-abbr">CSSCP</div>
           <div class="cert-full">Certified Sustainable Supply Chain Professional</div>
           <div class="cert-issuer">ISCEA · Active</div>
-          <div class="cert-desc">Professional certification in sustainable supply chain practices, including auditing and ESG framework implementation.</div>
+          <div class="cert-desc">Sustainable supply chain practices and ESG framework implementation.</div>
         </div>
       </div>
     </div>
@@ -382,7 +381,7 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
         <div class="lead-date">2021 – Present</div>
         <ul>
           <li>Architected and deployed the first international Sustainable Supply Chain Audit Framework (IISB26)</li>
-          <li>Authored and launched the global CSSCA (Certified Sustainable Supply Chain Auditor) accreditation program</li>
+          <li>Authored and launched the global CSSCA accreditation program</li>
         </ul>
       </div>
       <div class="lead fade" style="transition-delay:.07s">
@@ -401,7 +400,7 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
       <div class="win"><div class="win-val">Microsoft Global Finalist</div><div class="win-desc">2024 Sustainability Changemaker</div></div>
       <div class="win"><div class="win-val">First-of-Its-Kind</div><div class="win-desc">IISB26 Audit Framework</div></div>
       <div class="win"><div class="win-val">Practice Builder</div><div class="win-desc">Led national consulting practice</div></div>
-      <div class="win"><div class="win-val">De Novo Expert</div><div class="win-desc">Functions from scratch</div></div>
+      <div class="win"><div class="win-val">Global Reach</div><div class="win-desc">Canada · US · Caribbean</div></div>
     </div>
   </div>
 </section>
@@ -431,7 +430,7 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
           <div><label class="flbl">Name</label><input type="text" class="fi" placeholder="Your name" required></div>
           <div><label class="flbl">Email</label><input type="email" class="fi" placeholder="your@email.com" required></div>
         </div>
-        <div><label class="flbl">Subject</label><input type="text" class="fi" placeholder="How can I help?"></div>
+        <div><label class="flbl">Subject</label><input type="text" class="fi" placeholder="What would you like to discuss?"></div>
         <div><label class="flbl">Message</label><textarea class="ft" placeholder="Your message..."></textarea></div>
         <button type="submit" class="btn btn-g" style="width:100%;justify-content:center">Send Message</button>
       </form>
@@ -464,5 +463,3 @@ footer{background:#080808;padding:20px;display:flex;align-items:center;justify-c
     setTimeout(()=>{btn.textContent='Send Message';btn.style.background='';e.target.reset()},3000);
   }
 </script>
-
-
